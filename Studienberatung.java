@@ -13,12 +13,20 @@ public class Studienberatung{
 			} else {
 				System.out.println("Nicht studieren");
 			}
-			
+
 		} else if (input.equalsIgnoreCase("n")) {
 			System.out.println("Hast du Fachabitur?");
 			input = scanner.nextLine();
 			if (input.equalsIgnoreCase("n")) {
 				System.out.println("Nicht studieren");
+			} else {
+				System.out.println("Hast du eine Berufsausbildung?");
+				input = scanner.nextLine();
+				if (input.equalsIgnoreCase("n")) {
+					System.out.println("Besser noch studieren");
+				} else {
+					System.out.println("Du kannst später noch studieren");
+				}
 			}
 		}
 	}
