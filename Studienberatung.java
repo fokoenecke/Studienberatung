@@ -4,6 +4,12 @@ public class Studienberatung{
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Hast du Abitur?");
 		String input = scanner.nextLine();
-		System.out.println(input);
+		if (input.equalsIgnoreCase("n")) {
+			System.out.println("Hast du Fachabitur?");
+			input = scanner.nextLine();
+			if (input.equalsIgnoreCase("n")) {
+				System.out.println("Nicht studieren");
+			}
+		}
 	}
 }
